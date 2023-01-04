@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSPROJECTLec66-70.html</title>
+    <style type="text/css">
+
+        body{
+            margin:0;
+            padding:0px;
+            line-height: 1.5em;
+        }
+        #header{
+            background: black;
+            height: 100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #contentwrapper{
+            float:left;
+            width: 100%;
+        }
+        #contentcolumn{
+            margin: 0 230px 0  230px;
+        }
+        #leftcolumn{
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background-color: darksalmon;
+        }
+        #rightcolumn{
+            float: right;
+            width: 230px;
+            margin-left: -230%;
+            background-color: rgb(127, 12, 235);
+        }
+        .innertext{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            color:#5E5E5E;
+        }
+        #footer{
+            clear: left;    /*  Cannot float on left */
+            background: black;
+            color:#FFF;
+            text-align: center;
+            padding: 4px;
+            width: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+                    /* ###    Navigation Bar    ### */
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            background-color: #000;
+        }
+        li{
+            float: left;
+            border-right: 1px #bbb;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        li a{
+            display: block;
+            padding: 14px 16px;
+            background-color: #000;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: #808080;
+        }
+        .active{
+            background-color: skyblue;
+        }
+
+                                    /* #### Responsive Layout CSS  #### */
+
+       @media (max-width:840px)             /*  drop right column down */
+       {
+        #leftcolumn {
+        margin-left:100%;
+       }
+       #rightcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+       }
+       #contentcolumn{
+            margin-right: 0;
+       }
+       }       
+       
+       @media (max-width:600px)             /*  drop left column down */
+       {
+        
+       #leftcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+       }
+       #contentcolumn{
+            margin-left: 0;
+       }
+       }     
+
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <ul style="display: inline;">
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#news">NEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertext">
+                    <b>WELCOME - Center Text</b><br>
+                    An unvisited link is underlined and blueA visited link is underlined and purpleAn active link is underlined and red
+                        The indefinite article takes two forms. It’s the word a when it precedes a word that begins with a consonant. 
+                        It’s the word an when it precedes a word that begins with a vowel. 
+                        The indefinite article indicates that a noun refers to a general idea rather than a particular thing. 
+                        For example, you might ask your friend, “Should I bring a gift to the party?” 
+                        Your friend will understand that you are not asking about a specific type of gift or a specific item.
+                         “I am going to bring an apple pie,” your friend tells you. 
+                         Again, the indefinite article indicates that she is not talking about a specific apple pie. 
+                         Your friend probably doesn’t even have any pie yet. The indefinite article only appears with singular nouns. 
+                        Consider the following examples of indefinite articles used in context:
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="leftcolumn">
+            <div class="innertext">
+                <b>LEFTCOLUMN - <em>230px</em></b><br>
+                An unvisited link is underlined and blueA visited link is underlined and purpleAn active link is underlined and red
+                    The indefinite article takes two forms. It’s the word a when it precedes a word that begins with a consonant. 
+                    It’s the word an when it precedes a word that begins with a vowel. 
+                    The indefinite article indicates that a noun refers to a general idea rather than a particular thing. 
+                    For example, you might ask your friend, “Should I bring a gift to the party?” 
+                    Your friend will understand that you are not asking about a specific type of gift or a specific item.
+                     “I am going to bring an apple pie,” your friend tells you. 
+                     Again, the indefinite article indicates that she is not talking about a specific apple pie. 
+                     Your friend probably doesn’t even have any pie yet. The indefinite article only appears with singular nouns. 
+                    Consider the following examples of indefinite articles used in context:
+                
+            </div>
+        </div>
+
+        <div id="rightcolumn">
+            <div class="innertext">
+                <b>RIGHTCOLUMN - 230px</b><br>
+                    An unvisited link is underlined and blueA visited link is underlined and purpleAn active link is underlined and red
+                    The indefinite article takes two forms. It’s the word a when it precedes a word that begins with a consonant. 
+                    It’s the word an when it precedes a word that begins with a vowel. 
+                    The indefinite article indicates that a noun refers to a general idea rather than a particular thing. 
+                    For example, you might ask your friend, “Should I bring a gift to the party?” 
+                    Your friend will understand that you are not asking about a specific type of gift or a specific item.
+                     “I am going to bring an apple pie,” your friend tells you. 
+                     Again, the indefinite article indicates that she is not talking about a specific apple pie. 
+                     Your friend probably doesn’t even have any pie yet. The indefinite article only appears with singular nouns. 
+                    Consider the following examples of indefinite articles used in context:
+                
+            </div>
+        </div>
+
+        <div id="footer">Footer</div>
+    </div>
+</body>
+</html>

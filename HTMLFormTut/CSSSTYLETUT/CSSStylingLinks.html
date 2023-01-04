@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Links</title>
+    <style type="text/css">
+        /* Unvisited Link */
+        a:link{
+            color:red;
+            text-decoration: none;
+        }
+        /* Visited Link */
+        a:visited{
+            color:blue;
+        }
+        /* mouse hover on link */
+        a:hover{
+            color:purple;
+            background-color: rgb(237, 237, 16);
+            text-decoration: underline;
+        }
+        /* selected Link */
+        a:active{
+            color:blue;
+        }
+        table{
+            border-collapse: collapse;
+            width:100%;
+        }
+        table,td,th{
+            border:1px solid rgb(0, 0, 0);
+            text-align: left;
+            
+        }
+        th{
+            text-decoration: 4px solid black;
+        }
+        tr:hover{
+            background-color: cyan;
+        }
+        th,td{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <p><b><a href="#" target="_blank">Sample Link</a></b></p>
+    <br><br/>
+    <hr>
+    <table>
+        <tr>
+            <th>FIRSTNAME</th>
+            <th>LASTNAME</th>
+            <th>CLASS</th>
+        </tr>
+        <tr>
+            <td>Rohit</td>
+            <td>Sharma</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Virat</td>
+            <td>Kohli</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>Sachin</td>
+            <td>tendulkar</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Virendra</td>
+            <td>Sehwag</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Yuvraj</td>
+            <td>Singh</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+</body>
+</html>

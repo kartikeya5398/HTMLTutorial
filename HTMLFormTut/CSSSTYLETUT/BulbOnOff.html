@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb ON /OFF</title>
+</head>
+<body style="background-color:#ffffff; margin-left: 820px">
+    <h1 style="color:#f93205">Javascript Code</h1>
+    <h3 style="color:blueviolet">BULB ON/OFF</h3>
+
+    <script>
+        function light(sw)
+        {
+            var pic;
+            if(sw==0)
+            {
+                pic="imagefolder/BulbOff.jfif"
+            }
+            else{
+                pic="imagefolder/BulbOn.jfif"
+            }
+            document.getElementById('myImage').src=pic;
+
+        }
+    </script>
+    <br></br>
+    <img id="myImage" src="imagefolder/BulbOff.jfif" width="200" height="250"/>
+    <p>
+        <button type="button" onclick="light(1)" style="color:green">Light ON</button>
+        <button type="button" onclick="light(0)" style="color:red">Light OFF</button>
+    </p>
+</body>
+</html>

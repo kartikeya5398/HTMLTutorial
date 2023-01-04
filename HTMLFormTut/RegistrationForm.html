@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <form name="Registration" action="send.php" method="post">
+        <table width="600" border="1" bordercolor="red" cellspacing="2" cellpadding="2">
+
+            <tr>
+                <th colspan="2"><h3><b>EMPLOYED REGISTRATION FORM</b></h3></th>
+            </tr>
+            <tr>
+                <td>FirstName :</td>
+                <td><input type="text" maxlength="50" name="fname"/></td>
+            </tr>
+            <tr>
+                <td>LastName :</td>
+                <td><input type="text" maxlength="50" name="lname"/></td>
+            </tr>
+            <tr>
+                <td>Position :</td>
+                <td>
+                    <select name="position">
+                        <option value="hr">HR</option>
+                        <option value="SD">Software Developer</option>
+                        <option value="QA">QA Tester</option>
+                        <option value="WD">Web developer</option>
+                        <option value="DA">Data Analyst</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level :</td>
+                <td>
+                    <select name="experience">
+                        <option value="fresher">Fresher</option>
+                        <option value="OYE">1 Year Experience</option>
+                        <option value="TYE">2 Year Experience</option>
+                        <option value="THYE">3 Year Experience</option>
+                        <option value="FoYE">4 Year Experience</option>
+                        <option value="FiYE">5 Year Experience</option>
+                        <option value="SiYE">6 Year Experience</option>
+                        <option value="SeYE">7 Year Experience</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job Type :</td>
+                <td>
+                    <input type="checkbox" name="ft"/>Full-Time
+                    <input type="checkbox" name="pt"/>Part-Time
+                    <input type="checkbox" name="it"/>Internship
+                    <input type="checkbox" name="ct"/>Contract
+                </td>
+            </tr>
+            <tr>
+                <td>Employement Status :</td>
+                <td>
+                    <input type="radio" name="estatus" value="employed"/>Employed
+                    <input type="radio" name="estatus" value="unemployed"/>UnEmployed
+                    <input type="radio" name="estatus" value="student"/>Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments :</td>
+                <td>
+                    <textarea name="comment" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="Submit"/>
+                    <input type="reset" name="reset" value="Reset"/>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: coral;
+            ;
+        }
+        h1{
+            color:chartreuse;
+        }
+        h2{
+            color:rgb(220, 20, 60);
+        }
+        h3{
+            color:#2fab9b;
+        }
+        h4{
+            color:purple;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #textfont{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color:blue;
+        }
+        .largegreentext{
+            font-size: large;
+            color:rgb(2, 141, 2);
+            font-weight: bold;
+        }
+        .smallredtext{
+            font-size: small;
+            color:lightgoldenrodyellow;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+
+        /* colorpicker.com */

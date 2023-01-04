@@ -1,0 +1,31 @@
+
+            body{
+                background-color:darkgrey;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            h2{
+                font-family: Georgia;
+                color:chartreuse;
+            }
+            h3{
+                color:deeppink;
+            }
+            h1{
+                color:#12eafd;
+            }
+            .blueboldtext{
+                font-size: small;
+                color:blue;
+                font-weight: bold;
+            }
+            .largegreentext{
+                font-size: large;
+                color:green;
+                font-weight: bold;
+            }
+            .underline{
+                text-decoration: underline;
+                color:brown
+            }
+

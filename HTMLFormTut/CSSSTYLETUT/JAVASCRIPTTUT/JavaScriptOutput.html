@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output Lec-76</title>
+</head>
+<body>
+    <!-- <p>The Result will shown below --</p>
+    <script type="text/javascript">
+        // document.write(10 + 12);
+        window.alert(10 +22);                   //shown as alert popup message
+
+    </script> -->
+
+    <p id="math">
+        <script type="text/javascript">
+            document.getElementById("math").innerHTML=16 + 14 + "Hello";
+        </script>
+    </p>
+
+    <p id="demo">
+        
+        <script type="text/javascript">
+            var Student1="Rohit";
+            var Student2="Virat";
+            document.getElementById("demo").innerHTML=Student1 + "<br/>" + Student2;
+        </script>
+    </p>
+
+    <p id="demo2">
+        <script type="text/javascript">
+            var line1="It's a Line";
+            var line2="This is Second 'Line'";
+            var line3='This is "Third" line';
+            document.getElementById("demo2").innerHTML=line1 +  "<br/>" + line2 + "<br/>" + line3;
+            document.getElementById("demo2").innerHTML=line1.length;
+        </script>
+    </p>
+
+                    <!-- JavaScript Sorting and Reverse Array Lec-99 -->
+    <p id="demo3">
+        <script type="text/javascript">
+            var cars=["Skoda","Volvo","Toyota","Mahindra","Tata"];
+            var model=["Laura","XC60","Fortuner","XUV700","Safari"];
+            var combined=cars.concat(model);
+            cars.sort();
+            cars.reverse();
+            document.getElementById("demo3").innerHTML=combined;
+        </script>
+    </p>
+
+                        <!-- javascript Conditional if-else Lec-101 -->
+    <script type="text/javascript">
+        var score=196;
+
+        if(score < 50)
+        {
+            document.write("Fail");
+        }
+        else if(score <70)
+        {
+            document.write("Average");
+        }
+        else if(score < 90)
+        {
+            document.write("Good");
+        }
+        else if (score <100)
+        {
+            document.write("Excellent");
+        }
+        else{
+            document.write("No. should not exceeds than 100");
+        }
+    </script>
+    <br><br/>
+
+                        <!-- javascript For loop Lec-104 -->
+    <script type="text/javascript">
+        var count;
+
+        for(count=0; count <= 10; count++)
+        {
+            document.write(count);
+            document.write("<br/>");
+        }
+    </script>
+</body>
+</html>
