@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Image Hover </title>
+    <style>
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .container .box{
+            position: relative;
+            width: 20rem;
+            height:20rem;
+            margin: 3rem;
+        }
+        .container .box:hover .imgBox{
+            transform: translate(-3.5rem,-3.5rem);
+        }
+        .container .box:hover .content{
+            transform: translate(10.5rem,15.5rem);
+            color: black;
+            font-display: red;
+        }
+        .imgBox{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index:2;
+            transition: all 0.5s ease-in-out;
+        }
+        .imgBox img{
+            width:20rem;
+            height:20rem;
+            object-fit: cover;
+            resize: both;
+        }
+        .background{
+            background: linear-gradient(90deg, #2CD9FF, #7EFFB2, #42fe3f, #cbfe3f, #febb3f,#fe583f,#fe3f7b, #ee3ffe,#583ffe);
+            background-size: 1200% 1000%;
+            animation: anim 3.0s infinite ease-in-out;
+        }
+        @keyframes anim{
+            0%{
+                background-position: 0 25%;
+            }
+            25%{
+                background-position: 25% 50%;
+            }
+            50%{
+                background-position: 75% 50%;
+            }
+            75%{
+                background-position: 50% 25%;
+            }
+            100%{
+                background-position: 0 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container background">
+        <div class="box">
+            <div class="imgBox">
+                <img src="imagefolder/scenary.jfif" alt="Scenary"/>
+            </div>
+            <div class="content">
+                <h2>
+                    Kumar Kartikeya <br/>
+                    <span>Software Engineer</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
